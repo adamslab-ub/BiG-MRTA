@@ -14,5 +14,7 @@ Example files: main_bigmrta_StaticHugeProblem_nRobot.py and main_bigmrta_Dynamic
 
 - edf_taptc.py: This contains the Earliest Deadline First (EDF) algorithm that each robot calls to select a task for the TAPTC problem. To see how use this method, you can check this example file: main_edf_TAPTC.py
 
+- feas_rnd.py: This contains the feasibility-preserving random-walk (Feas-RND) baseline algorithm that each robot calls to select a task. To see how use this method, you can check this example file: main_feas_rnd_StaticHugeProblem_nRobot.py. You can modify Line 24 in these codes to change the swarm size.
+
 # Dependencies
 numpy, matplotlib, scipy, networkx
