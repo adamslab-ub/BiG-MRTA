@@ -1,2 +1,3 @@
 # ignore all bil files
 *.bil
+__pycache__/
