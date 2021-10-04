@@ -14,3 +14,5 @@ To have a computationally efficient flood simulator and data samples, we separat
 - To generate data points based on fool rate and the area, you can use this file: mainFloodSimulation_DOE.m. If you want to have a flood simulation for a different region (any place on the world that you have its elevation data) or different flood rate, you can use this file to generate the data points.
 
 - To add task information that can be used by the BiG-MRTA, and Feas-RND algorithms, you need to run one of these files: mainGenerateDataset.m, mainGenerateDataset_Difficult.m, and mainGenerateDataset_Dynamic.m.
+
+Note: You need to download bil file to execute it. Due to large size, the file has not been added to this Git repository.
