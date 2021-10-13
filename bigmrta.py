@@ -166,7 +166,7 @@ def getNextTask(currentTime, iRobot, robotState, robotNodes, taskNodes,\
             nxLoc = 0
             #t = toc()
     #print(nxLoc)
-    if isVisualize:
+    if isVisualize and currentTime > 0 and nx.is_connected(B):
         top = nx.bipartite.sets(B)[0]
         if pos is None:
             pos = nx.bipartite_layout(B, top)
@@ -190,7 +190,7 @@ def getNextTask(currentTime, iRobot, robotState, robotNodes, taskNodes,\
     else:
         graphSize = B.size(weight=None)
     if isVisualize:
-        return nxLoc, graphSize, pos
+        return nxLoc, graphSize
     else:
         return nxLoc, graphSize
 
