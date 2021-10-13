@@ -181,8 +181,10 @@ def getNextTask(currentTime, iRobot, robotState, robotNodes, taskNodes,\
                                 edgecolors="#254117", linewidths=3, node_shape="s")
                                 
         nx.draw_networkx_labels(B, pos, font_size=18)
+        print(sol)
         fileName = 'Results_Illustration/Illustration_DecMataResults_t'+str(currentTime)+"_r"+str(iRobot)+"_nx"+str(nxLoc)
         plt.savefig(fileName+".pdf", dpi=300, format="pdf")
+        plt.savefig(fileName+".png", dpi=300, format="png")
         plt.show()
 
     if currentTime == 0:
