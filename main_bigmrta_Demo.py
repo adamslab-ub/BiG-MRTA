@@ -171,4 +171,4 @@ for iRobot in range(nRobot):
         prvLoc = nxtLoc
 plt.savefig(output_dir + "/bigmrta-demo-path.png", format="png", dpi=300, bbox_inches="tight")
 plt.show()
-print(robotHistory)
+# print(robotHistory)
