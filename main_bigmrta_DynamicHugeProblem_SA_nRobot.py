@@ -155,7 +155,7 @@ for nRobot in [5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]:
             for taskNode in futureTaskNodes:
                 print("{}: {}".format(taskNode,timeDeadline[taskNode]))
         print('Results:')
-        print('Task Done = {}, Total Cost = {}, Total Time: {}'.format(numTaskDone, totalCost, computationTimeWhole))
+        print('Task Done = {}, Total Cost = {}, Total Computing Time (average across robots): {}'.format(numTaskDone, totalCost, computationTimeWhole))
 
         results = {'nRobot': nRobot, 'nTask': nTask, 'iRun': iRun, 'numTaskDone': numTaskDone, 'objVal': numTaskDone,
                    'totalCost': totalCost, 'computationTime': computationTimeWhole, 'robotState': robotState, 'decisionHistory': decisionHistory, 'robotHistory': robotHistory}

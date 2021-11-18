@@ -214,7 +214,7 @@ for G in group_list:
                 computationTimeWhole = np.mean(robotState[:,6])
 
                 print('Results:')
-                print(instance_name+' > Task Done = {}, Total Cost = {:.2f}, Total Time: {:.4f}'.format(numTaskDone, totalCost, computationTimeWhole))
+                print('Task Done = {}, Total Cost = {}, Total Computing Time (average across robots): {}'.format(numTaskDone, totalCost, computationTimeWhole))
                 results_score[instance_name] = numTaskDone
                 results_computingtime_all[instance_name] = np.sum(robotState[:,6])
                 results = {'nRobot': nRobot, 'nTask': nTask, 'range': Range, 'payload': Q, 'instance': I, 'numTaskDone': numTaskDone, 'objVal': numTaskDone, 'decisionHistory': decisionHistory, 'totalCost': totalCost,\

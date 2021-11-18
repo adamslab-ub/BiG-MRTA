@@ -208,7 +208,7 @@ def getParameters(letancyTime=0, Q=5, Range=140, Vavg=40/60, timeMax=5*60, timeS
     return [Q, Range, Vavg, timeMax, timeStep, decTime, letancyTime]
 
 def maximum_weight_full_matching(G, top_nodes=None, weight='weight'):
-    r"""Returns the maximum weight full matching of the bipartite graph `G`.
+    """Returns the maximum weight full matching of the bipartite graph `G`.
 
     Let :math:`G = ((U, V), E)` be a complete weighted bipartite graph with
     real weights :math:`w : E \to \mathbb{R}`. This function then produces
